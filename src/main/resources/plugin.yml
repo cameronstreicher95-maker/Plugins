@@ -1,0 +1,21 @@
+name: SpawnPlugin
+version: 1.0.0
+main: me.cameron.spawnplugin.SpawnPlugin
+api-version: '1.21'
+authors: [cameron]
+commands:
+  spawn:
+    description: Teleport to the server spawn
+    usage: /spawn
+    permission: plspawn.use
+  plsetspawn:
+    description: Set the server spawn point
+    usage: /plsetspawn
+    permission: plspawn.admin
+permissions:
+  plspawn.use:
+    description: Allows players to use /spawn
+    default: true
+  plspawn.admin:
+    description: Allows staff to set the spawn point
+    default: op
